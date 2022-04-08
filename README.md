@@ -1,2 +1,2 @@
-# Image-colorization-
+# Image Colorization 
 Image colorization using Autoencoder and GAN 
