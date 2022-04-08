@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+<head> <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> </head>
+<body>
+<form enctype="multipart/form-data" action="/upload" method="post" role="form" >
+ 
+
+<div class="frame">
+	<div class="center">
+		<div class="title">
+			<h1>Drop file to upload</h1>
+		</div>
+		<div style="color:darkslategrey;">
+            {% for message in get_flashed_messages()%}
+            {% if "successfully" in message %}
+                <p style="color:darkgreen;">{{ message }}</p>
+            {%else%}
+                <p style="color:darkred;">{{ message }}</p>
+                {%endif%}
+              {% endfor %}
+           </div>
+
+
+		<div class="dropzone">
+
+			<img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
+			<input type="file" name="file" id="file" class="upload-input" />
+		</div>
+
+		<button type="submit" class="btn" name="uploadbutton">Upload file</button>
+
+	</div>
+</div>
+</form>
+<div>
+	<div>
+		<img src="{{ url_for('static', filename='color/image.jpg') }}" alt="My Picture" width="300" height="200">
+
+	</div>
+</div>
+
+</body>
+</html>
+
