@@ -12,4 +12,7 @@ Black and white Image Colorization using Autoencoder - Google colab notebook for
 pyflask.py                                           - Run pyflask.py for web site and See website at url: 'localhost:5000' (for Autoencoder)
 
 ![GAN](https://user-images.githubusercontent.com/91648422/162555460-55ccf2ab-c4f1-4e35-9df6-2ac296d37c50.PNG)
-                               Output- Image by GAN
+          Output- Image by GAN
+
+![Autoencoder](https://user-images.githubusercontent.com/91648422/162556807-80181b32-ae89-40ca-a3f4-945728df5a12.PNG)
+           Output- Image by Autoencoder
